@@ -1,0 +1,70 @@
+body, h1, h2, h3, h4, p{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: hsl(0, 0%, 98%);
+    width: 100%;
+    height: fit-content;
+}
+
+.h-texts{
+    padding-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+}
+
+.h-texts h3{
+    font-weight: 200;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.h-texts h2{
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.h-texts p{
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0px 330px;
+    color: hsl(229, 6%, 66%);
+}
+
+.c-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    padding-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card{
+    background-color: #fff;
+    padding: 30px;
+    border-top: 2px solid hsl(180, 62%, 55%);
+    border-radius: 7px;
+    box-shadow: 0 -3em 3em rgba(156, 151, 151, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.card h4{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.card p{
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 20px
+}
+
+.card span{
+    display: flex;
+    justify-content: end;
+}
