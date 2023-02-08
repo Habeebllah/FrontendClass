@@ -1,0 +1,107 @@
+body{
+    background-color: #f7f9fe;
+    margin: 0;
+    padding: 0;
+}
+
+.main-wrapper{
+    margin-left: 60px;
+    margin-right: 60px;
+    font-family: 'Rubik', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    align-items: center;
+}
+
+header .logo img{
+    width: 120px;
+    height: auto;
+}
+
+.navBar, .navBar ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navBar ul li{
+    margin-right: 20px;
+    list-style-type: none;
+    color: #8e9cb1;
+    font-size: 13px;
+}
+
+.navBar .btn{
+    background-color: #FF8057;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 25px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.firstSection{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.firstSection .image{
+    width: 50%;
+}
+
+.firstSection .image img{
+    width: 100%;
+    height: auto;
+}
+
+.firstSection .texts{
+    width: 50%;
+}
+
+.texts h5{
+    text-transform: uppercase;
+    color: #2558ab;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.texts h2{
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.texts h2 span{
+    color: #2558ab;
+    text-transform: uppercase;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.texts p{
+    color: #8e9cb1;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.texts button{
+    background-color: #FF8057;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 20px 35px;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 20px;
+
+}
