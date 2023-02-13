@@ -11,8 +11,6 @@ body{
 }
 
 header{
-    width: 100%;
-    height: auto;
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
@@ -53,17 +51,10 @@ header .logo img{
     align-items: center;
 }
 
-.firstSection .image{
-    width: 50%;
-}
 
 .firstSection .image img{
     width: 100%;
     height: auto;
-}
-
-.firstSection .texts{
-    width: 50%;
 }
 
 .texts h5{
@@ -104,4 +95,50 @@ header .logo img{
     font-family: 'Rubik', sans-serif;
     margin-top: 20px;
 
+}
+
+.hamburger, .burger{
+    display: none;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:768px){
+    .firstSection{
+        display: grid;
+    }
+
+    .navBar{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .burger:checked ~ .navBar{
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        margin-top: 200px;
+        width: 50%;
+
+    }
+
+    .burger:checked ~ .navBar ul{
+        display: grid;
+        justify-content: left;
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    .burger:checked ~ .navBar ul li{
+        margin-bottom: 20px;
+    }
+
+    .burger:checked ~ .navBar .btn{
+        padding: 10px 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
 }
