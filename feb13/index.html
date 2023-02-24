@@ -4,13 +4,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div id="demo">
-
+    <!-- <div id="demo">
+        
     </div>
 
+    <p id="gre">Good morning</p>
 
+    <button onClick={clickHandler()}>Click Me</button> -->
+
+    <div class="card">
+        <h6>Count: <span id="count">0</span></h6>
+        <div class="actions">
+           <button onclick={addHandler()} class="add">Add</button>
+            <button onclick={removeHandler()} class="remove">Remove</button> 
+        </div>
+    </div>
+
+    <div class="calculator">
+        <div class="result" id="result">
+            
+        </div>
+        <div class="fields">
+            <input onchange={num1Handler()} id="firstNum" type="number" class="firstNum"/>
+            <input onchange={num2Handler()} id="secondNum" type="number" class="secondNum"/>
+            <button onclick={addsHandler()}>ADD</button>
+            <button onclick={subHandler()}>SUBSTRACT</button>
+        </div>
+    </div>
     
     <script src="index.js"></script>
 </body>

@@ -152,22 +152,22 @@ the user. If the user login credentials matches welcome the user, else return in
 number to an array and then display the array
 */
 
-const carrs = new Array('toyota', 'benz')
-console.log(carrs)
+// const carrs = new Array('toyota', 'benz')
+// console.log(carrs)
 
 
-const fruit = ['mango', 'pawpaw', 'apple', 'banana']
-for (let f = 0; f < fruit.length; f++){
-    console.log(fruit[f])
-}
+// const fruit = ['mango', 'pawpaw', 'apple', 'banana']
+// for (let f = 0; f < fruit.length; f++){
+//     console.log(fruit[f])
+// }
 
-// A program that send message to all items in an array
+// // A program that send message to all items in an array
 
-let message = "Welcome to grazac!!!"
-const names = ['olabode', 'camilus', 'taiwo', 'pritchard', 'adeleke']
-for (let n = 0; n < names.length; n++){
-    console.log(names[n], message)
-}
+// let message = "Welcome to grazac!!!"
+// const names = ['olabode', 'camilus', 'taiwo', 'pritchard', 'adeleke']
+// for (let n = 0; n < names.length; n++){
+//     console.log(names[n], message)
+// }
 
 // Write a program the display the sum of all the numbers is an array
 // [2,4,6,3,6,7,5,9]
@@ -237,26 +237,124 @@ for (let n = 0; n < names.length; n++){
 // while(u==w)
 
 
-const grade = {'Math': 30, 'Eng': 40, 'Chem': 50}
-grade['Bio'] = 50
-console.log(grade)
-for (let g in grade){
-    console.log(g, grade[g])
+// const grade = {'Math': 30, 'Eng': 40, 'Chem': 50}
+// grade['Bio'] = 50
+// console.log(grade)
+// for (let g in grade){
+//     console.log(g, grade[g])
+// }
+
+// const students = {
+//     'Habeeb': {'age': 60, 'remark': 'Good'},
+//     'Kareem': {'age': 50, 'remark': 'Satisfactory'},
+// }
+
+// const studentss = {
+//     Habeeb: {age: 60, remark: 'Good'},
+//     Kareem: {age: 50, remark: 'Satisfactory'},
+// }
+
+
+// console.log(students['Habeeb']['age'])
+// console.log(students['Habeeb']['remark'])
+
+// console.log(students.Habeeb)
+
+// for(let s in students){
+//     let instance = students[s]
+//     for(let st in instance){
+//         console.log(s, st, instance[st])
+//     }
+// }
+
+//FUNCTIONS
+
+// function greeting() {
+//     console.log("Good morning!!!")
+// }
+
+// function summation(a, b){
+//     console.log(a+b)
+// }
+
+// const greet = () => {
+//     console.log('Hello World')
+// }
+
+// greeting()
+// summation(4,6)
+// greet()
+
+// const multiplication = (number, depth) => {
+//     for (let m = 1; m <= depth; m++){
+//         console.log(number, 'x', m, '=', number*m)
+//     }
+// }
+// multiplication(4, 8)
+
+//Write a function that accpets a list of numbers as an argument
+//Then your function should return the sum of the numbers in the
+//list
+
+/* const sums = (list) => {
+    let total = 0
+    for (let n in list){
+        total += list[n]
+    }
+    return total
 }
 
-const students = {
-    'Habeeb': {'age': 60, 'remark': 'Good'},
-    'Kareem': {'age': 50, 'remark': 'Satisfactory'},
+console.log(sums([1,2,3,4,5])) */
+
+//DOM (Event Listener and Handler)
+/* demo.innerHTML = Date()
+let greets = gre.innerHTML
+console.log(greets)
+
+gre.style.color = 'pink'
+gre.style.background = 'yellow'
+
+const clickHandler = () => {
+    alert("Javascript is fun...")
+}
+ */
+let counts = 0
+const addHandler = () => {
+    counts += 1
+    ZeroChecker(counts)
+    count.innerHTML = counts
 }
 
-console.log(students['Habeeb']['age'])
-console.log(students['Habeeb']['remark'])
+const removeHandler = () => {
+    counts -= 1
+    ZeroChecker(counts)
+    count.innerHTML = counts
+}
 
-console.log(students.Habeeb)
-
-for(let s in students){
-    let instance = students[s]
-    for(let st in instance){
-        console.log(s, st, instance[st])
+const ZeroChecker = (n) => {
+    if (n < 0) {
+        alert("Can't go lesser than zero")
+        counts = 0
     }
 }
+
+//Design a simple UI a calculator that does
+//only addition function
+
+let number1 = 0
+let number2 = 0
+const num1Handler = () => {
+    number1 = firstNum.value
+}
+
+const num2Handler = () => {
+    number2 = secondNum.value
+}
+
+const addsHandler = () => {
+    result.innerHTML = parseInt(number1) + parseInt(number2)
+}
+
+const subHandler = () => {
+    result.innerHTML = parseInt(number1) - parseInt(number2)
+}git 
