@@ -339,7 +339,7 @@ const ZeroChecker = (n) => {
 }
 
 //Design a simple UI a calculator that does
-//only addition function
+//only addition function using input fields
 
 let number1 = 0
 let number2 = 0
@@ -357,4 +357,13 @@ const addsHandler = () => {
 
 const subHandler = () => {
     result.innerHTML = parseInt(number1) - parseInt(number2)
-}git 
+}
+
+//using buttons
+
+let screen
+const oneHandler = () => {
+    result.innerHTML += one.innerHTML
+}
+
+console.log(screen)

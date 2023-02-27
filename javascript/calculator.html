@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="calculator">
+        <div class="result" id="result">
+            
+        </div>
+        <div class="fields">
+            <button onclick={oneHandler()} id="one">1</button>
+            <button onclick={twoHandler()} id="two">2</button>
+            <button onclick={addsHandler()} id="add">+</button>
+            <button onclick={subHandler()} id="sub">-</button>
+            <button onclick={equalHandler()}>=</button>
+            <button onclick={delHandler()}>Del</button>
+            <button onclick={resetHandler()}>Reset</button>
+        </div>
+    </div>
+
+    <div class="auth">
+        <form id="form">
+            <div class="inputs">
+                <input placeholder="Username" type="text" id="username">
+                <input placeholder="Password" type="password" id="password">
+            </div>
+            <div class="btn">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+    
+    
+    <script src="calculator.js"></script>
+</body>
+</html>

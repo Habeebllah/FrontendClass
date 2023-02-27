@@ -1,0 +1,33 @@
+
+.calculator{
+    background-color: gray;
+    width: fit-content;
+    padding: 20px 40px;
+    margin: auto;
+    margin-top: 90px;
+    border-radius: 5px;
+}
+
+.result{
+    background-color: #fff;
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.auth{
+    background-color: gray;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px 40px;
+    border-radius: 5px;
+}
+
+.inputs{
+    display: grid;
+}
+
+.inputs input{
+    margin-bottom: 10px;
+}
