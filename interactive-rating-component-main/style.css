@@ -1,0 +1,94 @@
+*{
+    font-family: 'Overpass', sans-serif;
+}
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color: hsl(216, 12%, 8%);
+    border-radius: 10px;
+    width: 320px;
+    padding: 40px;
+}
+
+.star{
+    background-color: hsl(213, 19%, 18%);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+h3{
+    color: #fff;
+    font-size: 30px;
+}
+
+p{
+    color: hsl(216, 12%, 54%);
+    line-height: 25px;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.rating button{
+    border-radius: 50%;
+    padding: 15px 20px;
+    background-color: hsl(213, 19%, 18%);
+    border: none;
+    color: hsl(216, 12%, 54%);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.rating button:hover{
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submit{
+    color: #fff;
+    border-radius: 20px;
+    background-color: hsl(25, 97%, 53%);
+    padding: 10px 70px;
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.active{
+    background-color: hsl(216, 12%, 54%) !important;
+    color: hsl(213, 19%, 18%) !important;
+}
+
+.submit:hover{
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+}
+
+.info {
+    display: grid;
+    justify-content: center;
+}
+
+.card1{
+    background-color: hsl(216, 12%, 8%);
+    border-radius: 10px;
+    width: 320px;
+    padding: 40px;
+    text-align: center;
+}
+
+.info p{
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    padding: 3px 15px;
+    border-radius: 15px;
+}

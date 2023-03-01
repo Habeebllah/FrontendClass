@@ -50,3 +50,15 @@ form.addEventListener("submit", (e) => {
         console.log(pw, un)
     }
 })
+
+
+//API
+fetch("https://attendance.olymosbiotechs.com.ng/courses")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+    let content = document.querySelector(".content");
+    data.results.forEach((course) => {
+      content.innerHTML += `<p>${course.course_code}</p>`;
+    });
+  });
