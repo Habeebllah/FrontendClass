@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+header{
+    margin-bottom: 50px;
+}
+header svg{
+    width: 100%;
+}
+body{
+    background-color: hsl(180, 52%, 96%);
+}
+.main{
+    display: grid;
+    justify-content: center;
+   
+}
+.card{
+    width:1000px;
+    padding: 15px;
+    box-shadow: 0.3px 1px 3px hsla(180, 13%, 54%, 0.565);
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+   
+}
+.card:hover{
+    border-left: 5px solid hsl(180, 29%, 50%);
+    transition: .2s all;
+}
+.card .left{
+    display: flex;
+}
+.info .top{
+    display: flex;
+    margin-bottom: 10px;
+}
+.info .top ul{
+    display: flex;
+    align-items: center;
+}
+.info .top ul li{
+    list-style-type: none;
+    margin-right: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.info .top ul li:nth-child(1){
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+}
+.info .top ul li:nth-child(2){
+    background-color:hsl(180, 29%, 50%) ;
+    color: white;
+    border-radius: 15px;
+    font-size: 10px;
+    padding: 6px;
+    font-weight: 700;
+}
+.info .top ul li:nth-child(3){
+    background-color:hsl(180, 14%, 20%);
+    color: white;
+    border-radius: 15px;
+    font-size: 10px;
+    padding: 6px;
+    font-weight: 700;
+}
+.profileimg svg{
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.position{
+    margin-bottom: 10px;
+}
+.position p{
+    font-size: 19px;
+    color: hsl(180, 14%, 20%);
+    font-weight: 700;
+}
+.time span{
+    color:hsl(180, 8%, 52%);
+    font-size: 12px;
+    font-weight: 500;
+}
+.right span{
+    margin-right: 15px;
+    background-color: hsl(180, 31%, 95%);
+    color:hsl(180, 29%, 50%);
+    padding:8px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
