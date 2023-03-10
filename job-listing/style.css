@@ -98,3 +98,53 @@ body{
     border-radius: 10px;
     cursor: pointer;
 }
+
+.container{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: end;
+}
+.filters{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 130px;
+    margin-bottom: 20px;
+    width: 80%;
+    position: absolute;
+    top: 74;
+}
+
+.item{
+    display: flex;
+    background-color:  hsl(180, 29%, 50%);
+    color: hsl(180, 14%, 20%);
+    border: none;
+    margin-left: 10px;
+    padding: 10px 5px;
+
+}
+
+.filt{
+    display: flex;
+    align-items: center;
+}
+.item span{
+    background-color: hsl(180, 14%, 20%);
+    color: hsl(180, 29%, 50%);
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.clear{
+    padding: 10px 15px;
+    background-color:  hsl(180, 29%, 50%);
+    color: hsl(180, 14%, 20%);
+    cursor: pointer;
+    border: none;
+
+}
+
